@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --white: rgb(255, 255, 255);
+  --black: rgb(17, 21, 23);
+  --grey: rgb(41, 50, 56);
+  --blue: rgb(29, 140, 215);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+

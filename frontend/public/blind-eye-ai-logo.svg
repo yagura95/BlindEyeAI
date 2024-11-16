@@ -1,0 +1,82 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="eyeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C5282"/>
+      <stop offset="100%" style="stop-color:#4299E1"/>
+    </linearGradient>
+    
+    <radialGradient id="irisGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#63B3ED"/>
+      <stop offset="70%" style="stop-color:#2C5282"/>
+      <stop offset="100%" style="stop-color:#2A4365"/>
+    </radialGradient>
+    
+    <clipPath id="eyeShape">
+      <path d="M 60 100 
+               C 100 60, 180 60, 220 100
+               C 180 140, 100 140, 60 100 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Main eye shape -->
+  <g transform="translate(20, 0)">
+    <!-- Eye outline -->
+    <path d="M 60 100 
+             C 100 60, 180 60, 220 100
+             C 180 140, 100 140, 60 100 Z" 
+          fill="url(#eyeGradient)" 
+          stroke="#2D3748" 
+          stroke-width="2"/>
+    
+    <!-- Scanning line effect -->
+    <rect x="60" y="70" width="160" height="2" fill="#90CDF4" opacity="0.6">
+      <animate attributeName="y" 
+               values="70;130;70" 
+               dur="3s" 
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity" 
+               values="0.6;0.2;0.6" 
+               dur="3s" 
+               repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Binary code in the background -->
+    <text x="80" y="90" font-family="monospace" font-size="8" fill="#90CDF4" opacity="0.3">
+      10110101 01001
+    </text>
+    <text x="90" y="110" font-family="monospace" font-size="8" fill="#90CDF4" opacity="0.3">
+      01001 10110101
+    </text>
+    
+    <!-- Iris -->
+    <circle cx="140" cy="100" r="30" fill="url(#irisGradient)"/>
+    
+    <!-- Circuit pattern overlay -->
+    <path d="M 120 100 L 160 100 M 140 80 L 140 120" 
+          stroke="#90CDF4" 
+          stroke-width="1.5" 
+          opacity="0.5"/>
+    <circle cx="140" cy="100" r="15" 
+            stroke="#90CDF4" 
+            stroke-width="1.5" 
+            fill="none" 
+            opacity="0.5"/>
+  </g>
+
+  <!-- Company Name -->
+  <text x="280" y="90" font-family="Arial" font-size="32" font-weight="bold" fill="#2D3748" text-anchor="middle">
+    Blind Eye
+  </text>
+  <text x="280" y="120" font-family="Arial" font-size="24" font-weight="bold" fill="#4299E1" text-anchor="middle">
+    AI
+  </text>
+
+  <!-- Decorative circuit lines -->
+  <g stroke="#90CDF4" stroke-width="1" opacity="0.6">
+    <path d="M 330 85 L 350 85 L 350 105" fill="none"/>
+    <path d="M 230 85 L 210 85 L 210 105" fill="none"/>
+    <circle cx="350" cy="105" r="2" fill="#90CDF4"/>
+    <circle cx="210" cy="105" r="2" fill="#90CDF4"/>
+  </g>
+</svg>
