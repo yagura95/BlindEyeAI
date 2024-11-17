@@ -1,0 +1,33 @@
+.homepage-content {
+  padding: 0px 150px;
+}
+
+.homepage-description {
+  width: 100%;
+  min-height: 450px;
+  background-image: url("/homepage-bg.png");
+  border-radius: 25px;
+  padding: 50px 60px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.homepage-description-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 3.3rem;
+  margin-bottom: 25px;
+}
+
+.homepage-description-summary {
+  font-size: 1.3rem; 
+}
+
+.homepage-description-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
