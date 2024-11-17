@@ -1,0 +1,25 @@
+.model-box-content {
+  max-width: 400px;
+}
+
+.model-box-img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.model-box-img > img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.model-box-title {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.model-box-description {
+  width: 100%;
+  color: var(--light-grey);
+}

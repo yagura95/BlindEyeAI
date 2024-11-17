@@ -5,8 +5,11 @@
 
   --white: rgb(255, 255, 255);
   --black: rgb(17, 21, 23);
+  --light-black: rgb(28, 34, 38);
   --grey: rgb(41, 50, 56);
+  --light-grey: rgb(158, 173, 183);
   --blue: rgb(29, 140, 215);
+
 }
 
 html {

@@ -1,0 +1,22 @@
+.feature-box {
+  border: 2px solid var(--grey);
+  border-radius: 15px;
+  padding: 15px 30px 15px 25px;
+  width: 100%;
+  background-color: var(--light-black);
+}
+
+.feature-box-img {
+  margin-bottom: 10px;
+}
+
+
+.feature-box-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-box-description {
+  color: var(--light-grey);
+}
