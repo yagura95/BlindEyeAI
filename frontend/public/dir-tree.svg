@@ -1,0 +1,47 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Style for monospace font and lines -->
+    <style>
+        .tree-text { font-family: monospace; font-size: 14px; }
+        .directory { fill: #0066cc; }
+        .file { fill: #333333; }
+    </style>
+    
+    <!-- Root directory -->
+    <text x="10" y="20" class="tree-text directory">./</text>
+    
+    <!-- Cat directory -->
+    <text x="10" y="40" class="tree-text directory">├── cat/</text>
+    <text x="30" y="60" class="tree-text file">├── cat_01.jpg</text>
+    <text x="30" y="80" class="tree-text file">├── whiskers_22.jpg</text>
+    <text x="30" y="100" class="tree-text file">├── feline_45.jpg</text>
+    <text x="30" y="120" class="tree-text file">├── kitty_87.jpg</text>
+    <text x="30" y="140" class="tree-text file">├── paws_103.jpg</text>
+    <text x="30" y="160" class="tree-text file">├── meow_56.jpg</text>
+    <text x="30" y="180" class="tree-text file">└── cat_129.jpg</text>
+    
+    <!-- Dog directory -->
+    <text x="10" y="220" class="tree-text directory">├── dog/</text>
+    <text x="30" y="240" class="tree-text file">├── dog_15.jpg</text>
+    <text x="30" y="260" class="tree-text file">├── puppy_78.jpg</text>
+    <text x="30" y="280" class="tree-text file">├── bark_33.jpg</text>
+    <text x="30" y="300" class="tree-text file">├── spot_92.jpg</text>
+    <text x="30" y="320" class="tree-text file">├── canine_44.jpg</text>
+    <text x="30" y="340" class="tree-text file">├── woof_167.jpg</text>
+    <text x="30" y="360" class="tree-text file">├── dog_201.jpg</text>
+    <text x="30" y="380" class="tree-text file">└── pup_55.jpg</text>
+    
+    <!-- Bird directory -->
+    <text x="10" y="420" class="tree-text directory">└── bird/</text>
+    <text x="30" y="440" class="tree-text file">├── bird_11.jpg</text>
+    <text x="30" y="460" class="tree-text file">├── tweet_67.jpg</text>
+    <text x="30" y="480" class="tree-text file">├── feathers_89.jpg</text>
+    <text x="30" y="500" class="tree-text file">├── wings_34.jpg</text>
+    <text x="30" y="520" class="tree-text file">├── birdie_123.jpg</text>
+    <text x="30" y="540" class="tree-text file">└── avian_77.jpg</text>
+    
+    <!-- Vertical lines -->
+    <path d="M 20 30 V 410" stroke="#666" fill="none" />
+    <path d="M 40 50 V 170" stroke="#666" fill="none" />
+    <path d="M 40 230 V 370" stroke="#666" fill="none" />
+    <path d="M 40 430 V 530" stroke="#666" fill="none" />
+</svg>

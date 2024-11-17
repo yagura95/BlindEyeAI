@@ -30,3 +30,15 @@ body {
   font-family: Inter, "sans-serif";
 }
 
+.content {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

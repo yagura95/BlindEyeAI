@@ -18,8 +18,8 @@ const Homepage = () => {
 
   return <>
       <Header />
-      <div className="homepage-content">
-      <div className="homepage-wrapper">
+      <div className="content">
+      <div className="wrapper">
         <div className="homepage-description">  
           <div className="homepage-description-title">
             Teach an AI model to classify your content 
