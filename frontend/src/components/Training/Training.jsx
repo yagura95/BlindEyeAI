@@ -1,17 +1,56 @@
+import "./Training.css"
+
 import { useState } from "react"
 import { Form, Link } from "react-router-dom"
 import Header from "../Header/Header.jsx"
-import "./Training.css"
+import Info from "./Info.jsx"
+
+import JSZip from "jszip"
 
 const Training = () => {
   const [filename, setFilename] = useState()
-  function drawContent(e) {
+  const [info, setInfo] = useState()
+
+  async function drawContent(e) {
     setFilename(e.target.files[0].name)
-    /*
-     TODO: analyse data
-           draw folder structure
-           draw labels and file count for each       
-    */
+
+    const zip = new JSZip()
+    const content = await zip.loadAsync(e.target.files[0])
+
+    const information = {}
+
+    for(const key of Object.keys(content.files)) {
+      const item = content.files[key]
+
+      if(item.dir) continue 
+
+      const i = item.name.split("/")
+
+      // TODO: deal with error 
+      if(i.length !== 2) {
+        throw new Error("Incorrect folder structure")
+      }
+
+      const label = i[0]
+      const filename = i[1]
+
+      if(!information[label]) {
+        information[label] = []
+      }
+
+      information[label].push(filename)
+    }
+
+    const i = []
+
+    for(const [label, files] of Object.entries(information)) {
+      i.push({
+        label: label,
+        files: files,
+      })
+    }
+
+    setInfo(i)
   }
 
   return <>
@@ -33,7 +72,8 @@ const Training = () => {
               {filename && <p id="training-filename">{filename}</p>}
             </div>
           </Form>
-          
+
+          {info && <Info info={info} />}
         </div>
       </div>
     </>
