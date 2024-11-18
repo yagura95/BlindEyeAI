@@ -9,13 +9,21 @@ import JSZip from "jszip"
 
 const Training = () => {
   const [filename, setFilename] = useState()
-  const [info, setInfo] = useState()
+  const [info, setInfo] = useState(null)
 
   async function drawContent(e) {
+    setInfo(null)
     setFilename(e.target.files[0].name)
+    let content
 
     const zip = new JSZip()
-    const content = await zip.loadAsync(e.target.files[0])
+
+    try {
+      content = await zip.loadAsync(e.target.files[0])
+    } catch(e) {
+      // TODO: deal with error
+      throw new Error("Failed to open zip file", e)
+    }
 
     const information = {}
 
@@ -72,7 +80,6 @@ const Training = () => {
               {filename && <p id="training-filename">{filename}</p>}
             </div>
           </Form>
-
           {info && <Info info={info} />}
         </div>
       </div>
