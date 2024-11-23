@@ -51,3 +51,8 @@ input[type="file"] {
 #training-filename {
   color: var(--light-grey);
 }
+
+.training-btn {
+  display: flex;
+  justify-content: flex-end;
+}
