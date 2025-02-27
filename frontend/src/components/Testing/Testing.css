@@ -1,0 +1,58 @@
+.testing-title {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.testing-help {
+  text-decoration: none;
+  color: var(--light-grey);
+  margin-bottom: 15px;
+}
+
+.testing-help:hover {
+  color: var(--grey);
+}
+
+.testing-description {
+  margin-bottom: 45px;
+  line-height: 1.5rem;
+}
+
+#testing-form {
+  display: flex;
+  align-items: center;
+}
+
+.testing-form-item {
+  min-width: 150px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#testing-file {
+  border: 1px solid var(--light-grey);
+  background-color: var(--light-black);
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#testing-file:hover {
+  opacity: 0.8;
+}
+
+#testing-file:active {
+  opacity: 0.5;
+}
+
+#testing-filename {
+  color: var(--light-grey);
+}
+
+.testing-btn {
+  display: flex;
+  justify-content: flex-end;
+}

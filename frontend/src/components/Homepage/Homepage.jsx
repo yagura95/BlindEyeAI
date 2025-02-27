@@ -1,6 +1,6 @@
 import "./Homepage.css"
 import Header from "../Header/Header.jsx"
-import Button from "./Button.jsx"
+import Button from "../Button/Button.jsx"
 import FeatureBox from "./FeatureBox.jsx"
 import ModelBox from "./ModelBox.jsx"
 import { useNavigate } from "react-router-dom"
